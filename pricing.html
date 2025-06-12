@@ -1,0 +1,679 @@
+<head>
+	<title>CaribeTech - Provedor de Internet</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<div class="col-xl-2 col-lg-4 col-md-5 col-11" style="margin-bottom: 30px;">
+				<a href="index.html" class="logo">
+					<img id="logo1" src="images/ctech.png" alt="">
+				</a>
+			</div>
+			<form method="get" class="searchform search-form" action="">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div><!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<!--topline section visible only on small screens|-->
+
+			<section class="page_topline ls s-borderbottom c-my-20">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-md-left text-center">
+							<ul class="top-includes">
+								<li>
+									<span class="icon-inline">
+										<span class="icon-styled color-main fs-14">
+											<i class="fa fa-phone"></i>
+										</span>
+										<span class="small-text">
+											<a href="#">+57 321 896 29 28</a>
+										</span>
+									</span>
+								</li>
+								<li>
+									<span class="icon-inline">
+										<span class="icon-styled color-main fs-14">
+											<i class="fa fa-pencil"></i>
+										</span>
+										<span class="small-text">
+											<a href="#">info@caribetech.net.co</a>
+										</span>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-center text-md-right d-none d-md-block">
+							<ul class="top-includes">
+								
+								<li>
+									<span class="icon-inline">
+										<span class="icon-styled color-main2 fs-14">
+											<i class="fa fa-user"></i>
+										</span>
+										<span class="small-text">
+											<a class="hover-main2" href="https://rcentral511.webserversystems.com:2096"> Login in / sign up</a>
+										</span>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!--eof topline-->
+
+			<div class="header_absolute header_layout_1">
+				<div id="particles-js"></div>
+				<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+				<header class="page_header ls justify-nav-end">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-xl-2 col-lg-4 col-md-5 col-11">
+								<a href="index.html" class="logo">
+									<img id="logo" src="images/ctech1.png" alt="">
+								</a>
+							</div>
+							<div class="col-xl-9 col-lg-8 col-md-7 col-1">
+								<div class="nav-wrap">
+
+									<!-- main nav start -->
+									<nav class="top-nav">
+										<ul class="nav sf-menu">
+											<li class="active">
+												<a href="index.html">Inicio</a>
+											</li>
+											<li>
+												<a href="empresa.html">Empresa</a>
+												<ul>
+													<li>
+														<a href="empresa.html#vision">Vision</a>
+													</li>
+													
+													<li>
+														<a href="empresa.html#mision">Mision</a>
+													</li>
+													<li>
+														<a href="empresa.html#clientes">Clientes</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+														<a href="index.html#price">Planes</a>
+													</li>
+												<li>
+												<a href="index.html#otrosServicios">Servicios</a>
+												
+											</li>																				
+											<!-- Normatividad debe con el click debe de desplazar a parte de normatividad de parte inferior del index -->
+											<li>
+												<a href="index.html#normatividad">Normatividad</a>
+												<ul>
+													
+													<li>
+														<a href="terms_of_use.html">Términos y Condiciones</a>
+													</li>
+													<li>
+														<a href="https://caribetechisp.speedtestcustom.com">Test de velocidad</a>
+													</li>
+													
+												</ul>
+											</li>
+											<!-- Menu de contactos -->
+											<li>
+												<a href="contact4.html">Contacto</a>
+												<ul>
+													<li>
+														<a href="contact4.html" >PQRS</a>
+													</li>
+													<li>
+														<a href="contact4.html">Informacion</a>
+													</li>
+													<li>
+														<a href="faq.html">Preg. Frecuentes</a>
+													</li>
+												</ul>
+											</li>
+											
+										</nav>
+																	<!-- eof main nav -->
+
+									<!--hidding includes on small devices. They are duplicated in topline-->
+									<ul class="top-includes d-none d-xl-block search-icon">
+
+										<li>
+											<!--modal search-->
+											<span>
+												<a href="#" class="search_modal_button">
+													<i class="fa fa-search"></i>
+												</a>
+											</span>
+
+										</li>
+
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- header toggler -->
+					<span class="toggle_menu"><span></span></span>
+				</header>
+
+				<div class="page_header_wrapper main-header-side">
+					<div class="page_header_side header_slide header_side_right aaaa ls">
+						<span class="toggle_menu toggle_menu_side header-slide"><span></span></span>
+						<div class="scrollbar-macosx">
+							<div class="side_header_inner">
+								<div class="header-side-menu">
+									<!-- main side nav start -->
+									<nav class="mainmenu_side_wrapper">
+										<ul class="nav menu-click">
+											<li>
+												<a href="https://caribetechisp.speedtestcustom.com">
+													<i class="color-main7 fa fa-rocket"></i>
+													Test Velocidad
+												</a>
+											</li>
+											<li>
+												<a href="faq.html">
+													<i class="color-main7 fa fa-question-circle"></i>
+													Preg. Frecuentes
+												</a>
+											</li>
+											
+											<li>
+												<a href="terms_of_use.html">
+													<i class="color-main7 fa fa-file-text-o"></i>
+													Term. de Servicio
+												</a>
+											</li>
+											<li>
+												<a href="contact4.html">
+													<i class="color-main7 fa fa-phone"></i>
+													Contacto
+												</a>
+											</li>
+											
+										</ul>
+									</nav>
+									<!-- eof main side nav -->
+
+
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+
+				<section class="page_title cs s-pt-60 s-pb-10 s-pt-lg-130 s-pb-lg-60 page_title text-center">
+					<div class="container-fluid">
+						<div class="row">
+
+							<div class="divider-60"></div>
+
+							<div class="col-md-12 text-center">
+								<h1>PLANES Y PRECIOS</h1>
+							</div>
+
+							<div class="divider-50"></div>
+
+						</div>
+
+					</div>
+					<ol class="breadcrumb full-width">
+						<li class="breadcrumb-item">
+							<a href="index.html">inicio</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a href="#">planes</a>
+						</li>
+						<li class="breadcrumb-item active">
+							precios
+						</li>
+					</ol>
+				</section>
+			</div>
+
+
+			<section id="price" class="s-py-80 s-py-lg-120 s-py-xl-160 ls ms">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2">
+							<h5 class="special-heading text-center">planes y precios</h5>
+							<h1 class="text-center">INALAMBRICOS</h1>
+							<p class="text-center big">Servicios inalambricos sujetos a viablidad del sitio de instalacion y precios aplican para Santa Marta.</p>
+						</div>
+					</div>
+					<div class="divider-45 d-none d-lg-block"></div>
+					<div class="row c-gutter-60">
+						<div class="col-lg-4 col-12 margin-auto">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor3">
+									<h3>
+										WFi - Basico
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main5">6.0</h4>
+										<p class="small-text">
+											<i class="color-main5 fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main6">6.0</h4>
+										<p class="small-text">
+											<i class="color-main6 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon03.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>Solo Internet</li>
+										<li>Instalación<br> 75.000<br></ul>
+									</ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">Plan</span>
+									<span class="plan-price color-main5">$55.000</span>
+									<span class="plan-decimals small-text">mensual</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor3"><span>Cotizar</span></a>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor2">
+									<h3>
+										WFi - KOGUI
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main3">10</h4>
+										<p class="small-text">
+											<i class="color-main3 fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main4">10</h4>
+										<p class="small-text">
+											<i class="color-main4 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon02.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>Solo Internet</li>
+										<li>Instalación<br> $75.000<br></ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">Plan</span>
+									<span class="plan-price color-main5">$80.000</span>
+									<span class="plan-decimals small-text">mensual</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor2"><span>Cotizar</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="divider-20 d-block d-md-none"></div>
+						<div class="col-lg-4 col-12">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor">
+									<h3>
+										WFI - Tayrona
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main">20</h4>
+										<p class="small-text text-left">
+											<i class="color-main fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main2">12</h4>
+										<p class="small-text text-left">
+											<i class="color-main2 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon01.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>Solo Internet</li>
+										<li>Instalación<br> $75.000<br></ul>
+										</ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">Plan</span>
+									<span class="plan-price color-main5">$120.000</span>
+									<span class="plan-decimals small-text">mensual</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor"><span>Cotizar</span></a>
+								</div>
+							</div>
+							<div class="divider-45 d-block d-lg-none"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="s-py-80 s-py-lg-120 s-py-xl-160 ls ms" style="margin-top:0px">
+				<div class="container " style=" margin-top:0px">
+					<div class="row " style="margin-top:-160px">
+						<div class="col-lg-8 offset-lg-2">
+							<h5 class="special-heading text-center">planes y precios</h5>
+							<h1 class="text-center">FIBRA OPTICA</h1>
+							<p class="text-center big">Servicios inalambricos sujetos a viablidad del sitio de instalacion y precios aplican para Santa Marta.</p>
+						</div>
+					</div>
+					<div class="divider-45 d-none d-lg-block"></div>
+					<div class="row c-gutter-60">
+						<div class="col-lg-4 col-12 margin-auto">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor3">
+									<h3>
+										Starter
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main5">100</h4>
+										<p class="small-text">
+											<i class="color-main5 fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main6">50</h4>
+										<p class="small-text">
+											<i class="color-main6 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon03.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>VOIP Service</li>
+									</ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">usd</span>
+									<span class="plan-price color-main5">49</span>
+									<span class="plan-decimals small-text">/mo</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor3"><span>Purchase</span></a>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor2">
+									<h3>
+										Advanced
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main3">200</h4>
+										<p class="small-text">
+											<i class="color-main3 fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main4">150</h4>
+										<p class="small-text">
+											<i class="color-main4 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon02.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>VOIP Service</li></ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">usd</span>
+									<span class="plan-price color-main3">79</span>
+									<span class="plan-decimals small-text">/mo</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor2"><span>Purchase</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="divider-20 d-block d-md-none"></div>
+						<div class="col-lg-4 col-12">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor">
+									<h3>
+										Platinum
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main">350</h4>
+										<p class="small-text text-left">
+											<i class="color-main fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main2">250</h4>
+										<p class="small-text text-left">
+											<i class="color-main2 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon01.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>VOIP Service</li>
+										</ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">usd</span>
+									<span class="plan-price color-main2">99</span>
+									<span class="plan-decimals small-text">/mo</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor"><span>Purchase</span></a>
+								</div>
+							</div>
+							<div class="divider-45 d-block d-lg-none"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<footer class="page_footer ls ms s-pt-80 s-pb-70 s-py-lg-120 s-pt-xl-135 s-pb-xl-105 c-gutter-60 text-center text-md-left">
+				<div class="container">
+					<div class="row">
+						<div class="divider-20 d-none d-xl-block"></div>
+
+						<div class="col-md-6 col-xl-3 order-xl-1 order-md-1 animate" data-animation="fadeInUp">
+
+							<div class="widget widget_text">
+								<h4 class="widget-title">Sobre nosotros</h4>
+								<p>
+									CaribeTech te engrega mejor servicio estable y sin complicaciones.
+								</p>
+								<div class="widget widget_social_buttons">
+									<a href="https://www.facebook.com/caribenet" class="fa fa-facebook color-bg-icon rounded-icon" title="facebook"></a>
+									<a href="https://twitter.com/caribettech" class="fa fa-twitter color-bg-icon rounded-icon" title="twitter"></a>
+									<a href="https://www.instagram.com/caribenet/" class="fa fa-instagram color-bg-icon rounded-icon" title="instagram"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 order-xl-2 order-md-4 animate" data-animation="fadeInUp">
+							<div class="widget links">
+								<h4 class="widget-title">Links</h4>
+								<ul>
+									<li class="cat-item">
+										<a href="https://caribetechisp.speedtestcustom.com">Test de Velocidad</a>
+									</li>
+									<li class="cat-item">
+										<a href="https://www.mintic.gov.co/">MinTic</a>
+									</li>
+									<li class="cat-item">
+										<a href="https://www.crcom.gov.co/">CRC en Linea</a>
+									</li>
+									<li class="cat-item">
+										<a href="contact4.html">Support</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 order-xl-3 order-md-3 animate" data-animation="fadeInUp">
+							<div class="widget services-links">
+								<h4 class="widget-title">Servicios</h4>
+								<ul>
+									<li class="cat-item">
+										<a class="color-main3">Internet Inalambrico</a>
+									</li>
+									<li class="cat-item">
+										<a class="color-main3">Fibra Optica</a>
+									</li>
+									<li class="cat-item">
+										<a class="color-main3">Redes Internas LAN</a>
+									</li>
+									<li class="cat-item">
+										<a class="color-main3">Seguridad CCTV</a>
+									</li>
+									<li class="cat-item ">
+										<a class="color-main3">Link PTP / PTMP</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-6 col-xl-3 order-xl-4 order-md-2 animate" data-animation="fadeInUp">
+							<div class="widget widget_icons_list">
+								<h4 class="widget-title">Contacto</h4>
+								<p>+57 5 421 4618</p>
+								<p>+57 321 896 2928</p>
+								<a href="#" class="small-text">
+									<i class="fa fa-envelope-o color-main fs-14"></i>
+									email.
+								</a>
+								<h4 class="widget-title">Oficinas</h4>
+								<p>MZ-k casa-4 B. Ciudad del Sol</p>
+								<a href="#" class="small-text">
+									<i class="fa fa-map-marker color-main3 fs-14"></i>
+									Get Direction
+								</a>
+							</div>
+							<div class="divider-45 d-none d-md-block d-xlz-none"></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="page_copyright ds s-py-10 copyright-bg">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="divider-15 d-none d-lg-block"></div>
+						<div class="col-md-12 text-center">
+							<p>&copy; Copyright <span class="copyright_year">2021</span> CARIBETECH All Rights Reserved</p>
+						</div>
+						<div class="divider-15 d-none d-lg-block"></div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	
+
+</body>
+
+
+<!-- Mirrored from html.modernwebtemplates.com/maxicom/pricing.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Mar 2021 01:48:42 GMT -->
+</html>

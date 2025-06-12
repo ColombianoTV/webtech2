@@ -1,0 +1,1141 @@
+<!-- <!DOCTYPE html> -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>CaribeTech - Provedor de Internet</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+	<script src="//code.jivosite.com/widget/dK5QCyRUpB" async></script>
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<div class="col-xl-2 col-lg-4 col-md-5 col-11" style="margin-bottom: 30px;">
+				<a href="index.html" class="logo">
+					<img id="logo1" src="images/ctech.png" alt="">
+				</a>
+			</div>
+			<form method="get" class="searchform search-form" action="">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+						id="modal-search-input">
+				</div>
+				<button type="submit" class="btn">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div><!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<!--topline section visible only on small screens|-->
+
+			<section class="page_topline ls s-borderbottom c-my-20">
+				<div id="myDIV" class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-md-left text-center">
+							<ul class="top-includes">
+								<li>
+									<span class="icon-inline">
+										<span class="icon-styled color-main fs-14">
+											<i class="fa fa-phone"></i>
+										</span>
+										<span class="small-text">
+											<a href="#">+57 321 896 29 28</a>
+										</span>
+									</span>
+								</li>
+								<li>
+									<span class="icon-inline">
+										<span class="icon-styled color-main fs-14">
+											<i class="fa fa-pencil"></i>
+										</span>
+										<span class="small-text">
+											<a href="#">info@caribetech.net.co</a>
+										</span>
+									</span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-center text-md-right d-none d-md-block">
+							<ul class="top-includes">
+
+								<li>
+									<span class="icon-inline">
+										<span class="icon-styled color-main2 fs-14">
+											<i class="fa fa-user"></i>
+										</span>
+										<span class="small-text">
+											<a class="hover-main2" href="https://rcentral511.webserversystems.com:2096">
+												Login in / sign up</a>
+										</span>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!--eof topline-->
+
+			<div class="header_absolute header_layout_1">
+				<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+				<header class="page_header ls justify-nav-end">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-xl-2 col-lg-4 col-md-5 col-11">
+								<a href="index.html" class="logo">
+									<img id="logo" src="images/ctech1.png" alt="">
+								</a>
+							</div>
+							<div class="col-xl-9 col-lg-8 col-md-7 col-1">
+								<div class="nav-wrap">
+
+									<!-- main nav start -->
+									<nav class="top-nav">
+										<ul class="nav sf-menu">
+											<li class="active">
+												<a href="index.html">Inicio</a>
+											</li>
+											<li>
+												<a href="empresa.html">Empresa</a>
+												<ul>
+													<li>
+														<a href="empresa.html#vision">Vision</a>
+													</li>
+
+													<li>
+														<a href="empresa.html#mision">Mision</a>
+													</li>
+													<li>
+														<a href="empresa.html#clientes">Clientes</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="index.html#price">Planes</a>
+											</li>
+											<li>
+												<a href="index.html#otrosServicios">Servicios</a>
+
+											</li>
+											<!-- Normatividad debe con el click debe de desplazar a parte de normatividad de parte inferior del index -->
+											<li>
+												<a href="index.html#normatividad">Normatividad</a>
+												<ul>
+
+													<li>
+														<a href="terms_of_use.html">Términos y Condiciones</a>
+													</li>
+													<li>
+														<a href="https://caribetechisp.speedtestcustom.com">Test de
+															velocidad</a>
+													</li>
+
+												</ul>
+											</li>
+											<!-- Menu de contactos -->
+											<li>
+												<a href="contact4.html">Contacto</a>
+												</li>
+
+									</nav>
+									<!-- eof main nav -->
+
+									<!--hidding includes on small devices. They are duplicated in topline-->
+									<ul class="top-includes d-none d-xl-block search-icon">
+
+										<li>
+											<!--modal search-->
+											<span>
+												<a href="#" class="search_modal_button">
+													<i class="fa fa-search"></i>
+												</a>
+											</span>
+
+										</li>
+
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- header toggler -->
+					<span class="toggle_menu"><span></span></span>
+				</header>
+
+				<div class="page_header_wrapper main-header-side">
+					<div class="page_header_side header_slide header_side_right aaaa ls">
+						<span class="toggle_menu toggle_menu_side header-slide"><span></span></span>
+						<div class="scrollbar-macosx">
+							<div class="side_header_inner">
+								<div class="header-side-menu">
+									<!-- main side nav start -->
+									<nav class="mainmenu_side_wrapper">
+										<ul class="nav menu-click">
+											<li>
+												<a href="https://caribetechisp.speedtestcustom.com">
+													<i class="color-main7 fa fa-rocket"></i>
+													Test Velocidad
+												</a>
+											</li>
+											<li>
+												<a href="faq.html">
+													<i class="color-main7 fa fa-question-circle"></i>
+													Preg. Frecuentes
+												</a>
+											</li>
+
+											<li>
+												<a href="terms_of_use.html">
+													<i class="color-main7 fa fa-file-text-o"></i>
+													Term. de Servicio
+												</a>
+											</li>
+											<li>
+												<a href="contact4.html">
+													<i class="color-main7 fa fa-phone"></i>
+													Contacto
+												</a>
+											</li>
+
+										</ul>
+									</nav>
+									<!-- eof main side nav -->
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<section class="page_slider">
+				<div id="particles-js"></div>
+				<div class="flexslider" data-nav="false">
+					<ul class="slides">
+						<li class="ds">
+							<img src="images/slide01.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="intro_layers_wrapper">
+											<div class="intro_layers">
+												<div class="intro_layer" data-animation="fadeInRight">
+													<h1 class="intro_featured_word">soluciones<br>para<br>Empresas y
+														Hogares</h1>
+													<h5
+														class="intro_before_featured_word intro-absolute text-uppercase fw-200">
+														El Mejor Servicio mas rapido y eficiente de la Region
+													</h5>
+												</div>
+												<div class="intro_layer" data-animation="fadeInUp">
+													<p class="text-uppercase intro_after_featured_word">Llevamos
+														Internet donde los grandes no llegan</p>
+												</div>
+											</div> <!-- eof .intro_layers -->
+										</div> <!-- eof .intro_layers_wrapper -->
+									</div> <!-- eof .col-* -->
+								</div><!-- eof .row -->
+							</div><!-- eof .container -->
+						</li>
+						<li class="ds slide2">
+							<img src="images/slide02.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="intro_layers_wrapper">
+											<div class="intro_layers">
+												<div class="intro_layer" data-animation="fadeInRight">
+													<h1 class="slide2 intro_featured_word">
+														Servicios<br>Mas<br>Eficientes al mejor<br>precio</h1>
+													<h5
+														class="fw-300 text-uppercase intro_before_featured_word intro-absolute">
+														llevamos internet<br>Donde los grandes no llegan
+													</h5>
+												</div>
+												<div class="intro_layer" data-animation="fadeInUp">
+													<p class="text-uppercase intro_after_featured_word">Pregunta por
+														Nuestros Planes</p>
+												</div>
+											</div> <!-- eof .intro_layers -->
+										</div> <!-- eof .intro_layers_wrapper -->
+									</div> <!-- eof .col-* -->
+								</div><!-- eof .row -->
+							</div><!-- eof .container -->
+							<div class="social-flex">
+								<p class="social-heading">
+									Siguenos...
+								</p>
+								<p class="social-icons">
+									<a href="https://www.facebook.com/caribenet" class="fa fa-facebook color-white"
+										title="facebook"></a>
+									<a href="https://twitter.com/caribettech" class="fa fa-twitter color-white"
+										title="twitter"></a>
+									<a href="https://www.instagram.com/caribenet/" class="fa fa-instagram color-white"
+										title="instagram"></a>
+								</p>
+							</div>
+						</li>
+						<li class="ds slide3">
+							<img src="images/slide03.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="intro_layers_wrapper">
+											<div class="intro_layers">
+												<div class="intro_layer" data-animation="fadeInRight">
+													<h1 class="slide2 intro_featured_word">No<br>Sufras<br>por<br>la
+														lentitud</h1>
+													<h5
+														class="intro-absolute fw-300 text-uppercase intro_before_featured_word">
+														Velocidades hasta 100 mbps<br> te entregamos sin problema..!
+													</h5>
+												</div>
+												<div class="intro_layer" data-animation="fadeInUp">
+													<p class="text-uppercase intro_after_featured_word">Clientes que
+														confian en Nosotros</p>
+												</div>
+											</div> <!-- eof .intro_layers -->
+										</div> <!-- eof .intro_layers_wrapper -->
+									</div> <!-- eof .col-* -->
+								</div><!-- eof .row -->
+							</div><!-- eof .container -->
+						</li>
+					</ul>
+				</div> <!-- eof flexslider -->
+				<div class="ds social-flex">
+					<p class="social-heading">
+						Siguenos...
+					</p>
+					<p class="social-icons">
+						<a href="https://www.facebook.com/caribenet" class="fa fa-facebook color-white"
+							title="facebook"></a>
+						<a href="https://twitter.com/caribettech" class="fa fa-twitter color-white" title="twitter"></a>
+						<a href="https://www.instagram.com/caribenet/" class="fa fa-instagram color-white"
+							title="instagram"></a>
+					</p>
+				</div>
+				<div class="arrow">
+					<img src="images/bottom.png" alt="">
+				</div>
+				<div class="animated-arrow">
+					<a href="#price">
+						<div class="mouse_scroll">
+							<span class=""><i class="color-main fa fa-angle-down unu"></i></span>
+							<span class=""><i class="color-main fa fa-angle-down doi"></i></span>
+							<span class=""><i class="color-main fa fa-angle-down trei"></i></span>
+						</div>
+					</a>
+				</div>
+			</section>
+
+
+			<section id="price" class="s-py-80 s-py-lg-120 s-py-xl-160 ls ms">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2">
+							<h5 class="special-heading text-center">planes y precios</h5>
+							<h1 id="inalambricos" class="text-center" style="font-weight: 700;">INALAMBRICOS</h1>
+							<p class="text-center big">Servicios inalámbricos sujetos a viabilidad del sitio de instalación y precios aplican para Santa Marta.</p>
+						</div>
+					</div>
+					<div class="divider-45 d-none d-lg-block"></div>
+					<div class="row c-gutter-60">
+						<div class="col-lg-4 col-12 margin-auto">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor3">
+									<h3>
+										WFi - Basico
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main5">6.0</h4>
+										<p class="small-text">
+											<i class="color-main5 fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main6">6.0</h4>
+										<p class="small-text">
+											<i class="color-main6 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon03.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>Solo Internet</li>
+										<li>Instalación<br> $75.000<br>
+									</ul>
+									</ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">Plan</span>
+									<span class="plan-price color-main5">$55.000</span>
+									<span class="plan-decimals small-text">mensual</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor3"><span>Cotizar</span></a>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor2">
+									<h3>
+										WFi - KOGUI
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main3">10</h4>
+										<p class="small-text">
+											<i class="color-main3 fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main4">10</h4>
+										<p class="small-text">
+											<i class="color-main4 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon02.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>Solo Internet</li>
+										<li>Instalación<br> $75.000<br>
+									</ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">Plan</span>
+									<span class="plan-price color-main5">$80.000</span>
+									<span class="plan-decimals small-text">mensual</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor2"><span>Cotizar</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="divider-20 d-block d-md-none"></div>
+						<div class="col-lg-4 col-12">
+							<div class="pricing-plan hero-bg rounded">
+								<div class="plan-name text-uppercase bg-maincolor">
+									<h3>
+										WFI - Tayrona
+									</h3>
+								</div>
+								<div class="plan-desc">
+									<div class="plan-content">
+										<h4 class="color-main">20</h4>
+										<p class="small-text text-left">
+											<i class="color-main fa fa-angle-down" aria-hidden="true"></i>
+											mb/s
+										</p>
+										<h4 class="color-main2">12</h4>
+										<p class="small-text text-left">
+											<i class="color-main2 fa fa-angle-up" aria-hidden="true"></i>
+											mb/s
+										</p>
+									</div>
+									<div class="price-icon">
+										<img src="images/price-icon01.png" alt="">
+									</div>
+								</div>
+								<div class="plan-features">
+									<ul class="list-bordered">
+										<li>Solo Internet</li>
+										<li>Instalación<br> $75.000<br>
+									</ul>
+									</ul>
+								</div>
+								<div class="price-wrap d-flex">
+									<span class="plan-sign small-text">Plan</span>
+									<span class="plan-price color-main5">$120.000</span>
+									<span class="plan-decimals small-text">mensual</span>
+								</div>
+								<div class="plan-button">
+									<a href="#" class="btn btn-maincolor"><span>Cotizar</span></a>
+								</div>
+							</div>
+							<div class="divider-45 d-block d-lg-none"></div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row" style="margin-top:120px;">
+
+							<div class="col-lg-8 offset-lg-2 icon-box text-center">
+								<a href="pricing.html">
+
+									<h4>Para mayor informacion </h4>
+									<p>
+										Sobre nuestros planes ingrese aquí.
+									</p>
+								</a>
+							</div>
+
+						</div>
+					</div>
+
+			</section>
+
+			<section id="otrosServicios"
+				class="ds s-pt-80 s-pb-20 s-pt-lg-130 s-pb-lg-70 s-pt-xl-160 s-pb-xl-100 c-gutter-60 c-mb-50 background-gradient advantage-section cover-background"
+				id="advantage">
+
+				<div class="container">
+
+					<div class="row text-center" style="margin-bottom:10px;margin-top:0px">
+						<div class="container">
+							<div class="icon-box text-center animate" data-animation="fadeInUp">
+								<h2>
+									<a>Otros servicios</a>
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row text-center">
+
+						<div class="icon-box text-center animate" style="background-color:grey;"
+							data-animation="fadeInUp">
+							<h2>
+
+							</h2>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-xl-4 col-md-6 animate" data-animation="fadeInUp">
+							<div class="icon-box text-center">
+								<div class="image-styled ">
+									<img alt="" src="images/wifi11.png">
+								</div>
+								<h5>
+									<a>Redes WIFI</a>
+								</h5>
+
+								<p>
+									Diseñamos e instalamos sistemas wifis para todo tipo de ambientes dándote la mejor cobertura y eficiencia.
+								</p>
+							</div>
+						</div><!-- .col-* -->
+						<div class="col-xl-4 col-md-6 animate" data-animation="fadeInUp">
+							<div class="icon-box text-center">
+								<div class="image-styled  mx-auto ">
+									<img alt="" style="margin-top:20px" src="images/cctv11.png">
+								</div>
+
+								<h5>
+									<a>Seguridad CCTV</a>
+								</h5>
+
+								<p>
+									La Seguridad, ante todo, instalamos tu circuito cerrado de TV a tu medida
+								</p>
+							</div>
+						</div><!-- .col-* -->
+						<div class="col-xl-4 col-md-6 animate" data-animation="fadeInUp">
+							<div class="icon-box text-center">
+								<div class="image-styled">
+									<img alt="" style="margin-top:15px" src="images/solar11.png">
+								</div>
+
+								<h5>
+									<a>Energia Solar</a>
+								</h5>
+
+								<p>
+									Diseñamos y te instalamos tu sistema autónomo de energía donde quieras.
+								</p>
+							</div>
+						</div><!-- .col-* -->
+						<div class="col-xl-4 col-md-6 animate" data-animation="fadeInUp">
+							<div class="icon-box text-center">
+								<div class="image-styled">
+									<img alt="" style="margin-top:15px" src="images/cable11.png">
+								</div>
+
+								<h5>
+									<a>Cableado estructurado</a>
+								</h5>
+
+								<p>
+									Conectamos las dependencias de su empresa o negocio con nuestras soluciones.
+								</p>
+							</div>
+						</div><!-- .col-* -->
+						<div class="col-xl-4 col-md-6 animate" data-animation="fadeInUp">
+							<div class="icon-box text-center">
+								<div class="image-styled">
+									<img alt="" style="margin-top:15px" src="images/fiber11.png">
+								</div>
+								<h5>
+									<a>Fibra óptica</a>
+								</h5>
+
+								<p>
+									Diseñamos y desplegamos fibra óptica en el proyecto que requieras, consúltanos y te daremos la mejor solución.
+								</p>
+							</div>
+						</div><!-- .col-* -->
+						<div class="col-xl-4 col-md-6 animate" data-animation="fadeInUp">
+							<div class="icon-box text-center">
+								<div class="image-styled">
+									<img alt="" style="margin-top:15px" src="images/cloud11.png">
+								</div>
+
+								<h5>
+									<a>Otros Soportes</a>
+								</h5>
+
+								<p>
+									Arrendar espacio en nuestras torres o un proyecto de conectividad en particular consúltanos.
+								</p>
+							</div>
+						</div><!-- .col-* -->
+						<div class="d-none d-lg-block divider-small"></div>
+
+					</div>
+				</div>
+			</section>
+
+
+
+			<section id="otrosServicios"
+				class="ls s-pt-80 s-pb-20 s-pt-lg-130 s-pb-lg-70 s-pt-xl-160 s-pb-xl-100 c-gutter-60 c-mb-50  advantage-section cover-background"
+				id="advantage">
+
+				<div class="container">
+
+
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2">
+
+							<h1  class="text-center" style="font-weight: 700;">AREA DE COBERTURA</h1>
+
+						</div>
+					</div>
+					<div class="row" style="margin-top:-50px">
+						<div class="col-lg-8 offset-lg-2">
+							<p class="text-center big">Tecnologías usadas:</p>
+
+						</div>
+					</div>
+
+
+					<div class="row d-flex justify-content-center align-items-center">
+
+						<ul class="list-unstyled text-center">
+							<li class="media">
+								<a class="media-image">
+									<img height="50" width="50" src="images/fibra11.png" alt="">
+								</a>
+								<div class="media-body">
+									<h5  >
+										<a>Fibra óptica </a>
+									</h5>
+									<div class="star-rating"  style="margin-top: -25px; margin-left: 6px;"title="Rated 4.0 out of 5">
+										<span style="width:100%">
+											<strong class="rating">5</strong> out of 5
+										</span>
+									</div>
+
+								</div>
+							</li>
+
+							<li class="media" style="margin-top: 25px;" >
+								<a class="media-image">
+									<img height="50" width="50" src="images/radio1.png" alt="">
+								</a>
+								<div class="media-body">
+									<h5  >
+										<a>Radio enlace </a>
+									</h5>
+									<div class="star-rating"  style="margin-top: -25px;"title="Rated 4.0 out of 5">
+										<span style="width:70%">
+											<strong class="rating">4</strong> out of 5
+										</span>
+									</div>
+
+								</div>
+							</li>
+
+						</ul>
+
+					</div>
+
+
+					<div class="container" style="margin-top:100px;margin-right: auto;">
+
+						<div class="row c-mb-30">
+							<main class="offset-lg-1 col-lg-10">
+								<div class="row isotope-wrapper masonry-layout">
+
+									<div class="col-xl-4 col-md-6 animate " data-animation="fadeInUp">
+										
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+														style="color: rgb(165, 39,2);"></i>
+													</div>
+													<p>Sta Marta</p>
+												</div>
+											</div>
+											<div class="col text-md-right" ><img alt="" height="45" width="45"
+													src="images/fibra11.png"></div>
+											<div class="col text-md-left"><img alt="" height="45" width="45" src="images/radio1.png">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 animate " data-animation="fadeInUp">
+										
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+														style="color: rgb(249,168,37);"></i>
+													</div>
+													<p>Palomino</p>
+												</div>
+											</div>
+											<div class="col text-md-right"><img alt="" height="45" width="45"
+													src="images/fibra11.png"></div>
+											<div class="col"><img alt="" height="45" width="45" src="images/radio1.png">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 animate " data-animation="fadeInUp">
+										
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+														style="color: rgb(255, 214,0);"></i>
+													</div>
+													<p>Minca </p>
+												</div>
+											</div>
+											<div class="col text-md-right"><img alt="" height="45" width="45"
+													src="images/fibra11.png"></div>
+											<div class="col"><img alt="" height="45" width="45" src="images/radio1.png">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 animate " data-animation="fadeInUp">
+									
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+														style="color: rgb(2,136,209);"></i>
+													</div>
+													<p>Ciénaga</p>
+												</div>
+											</div>
+											<div class="col text-md-right"><img alt="" height="45" width="45"
+													src="images/fibra11.png"></div>
+											<div class="col">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 animate " data-animation="fadeInUp">
+										
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+														style="color: rgb(156,39,176);"></i>
+													</div>
+													<p>Buritaca</p>
+												</div>
+											</div>
+											<div class="col"></div>
+											<div class="col"><img alt="" height="45" width="45" src="images/radio1.png">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 animate " data-animation="fadeInUp">
+										
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+														style="color: rgb(255,82,82);"></i>
+													</div>
+													<p>Pto Nuevo</p>
+												</div>
+											</div>
+											<div class="col text-md-right"><img alt="" height="45" width="45"
+													src="images/fibra11.png"></div>
+											<div class="col"><img alt="" height="45" width="45" src="images/radio1.png">
+											</div>
+										</div>
+										
+									</div>
+
+									<div class="col-xl-4 col-md-6 animate " data-animation="fadeInUp">
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+														style="color: rgb(121,85,72);"></i>
+													</div>
+													<p>Guachaca</p>
+												</div>
+											</div>
+											<div class="col text-md-right"><img alt="" height="45" width="45"
+													src="images/fibra11.png"></div>
+											<div class="col"><img alt="" height="45" width="45" src="images/radio1.png">
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-md-6 animate  " data-animation="fadeInUp">
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+															style="color: rgb(57,73,171);"></i>
+													</div>
+													<p>Tigrera</p>
+												</div>
+											</div>
+											<div class="col text-md-right"><img alt="" height="45" width="45"
+													src="images/fibra11.png"></div>
+											<div class="col">
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-md-6 animate " data-animation="fadeInUp">
+										<div class="row mb-3 ">
+											<div class="col">
+												<div class="media-body">
+													<div class="icon-styled">
+														<i class=" fa fa-map-marker fs-20" aria-hidden="true"
+															style="color: rgb(82,24,66);"></i>
+													</div>
+													<p>Calabazo</p>
+												</div>
+											</div>
+											<div class="col text-md-right"><img alt="" height="45" width="45"
+													src="images/fibra11.png"></div>
+											<div class="col"><img alt="" height="45" width="45" src="images/radio1.png">
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</main>
+						</div>
+					</div>
+					<div class=" item-media animate" data-animation="fadeInUp" style=" margin-bottom:10 px ;  margin-left:40px">
+					
+						<img alt="" height="1100" width="700" src="images/mapa.png">
+					</div>
+					
+					
+
+				</div>
+			</section>
+
+			<section id="normatividad">
+				<div class="container">
+
+					<div class="col-lg-12">
+						<h3>Normatividad</h3>
+
+						<!-- tabs start -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="tab04" data-toggle="tab" href="#tab04_pane" role="tab"
+									aria-controls="tab04_pane" aria-expanded="true">Un mejor Internet</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="tab05" data-toggle="tab" href="#tab05_pane" role="tab"
+									aria-controls="tab05_pane">Tus Derechos</a>
+							<!-- </li>
+							<li class="nav-item">
+								<a class="nav-link" id="tab06" data-toggle="tab" href="#tab06_pane" role="tab"
+									aria-controls="tab06_pane">Consulting</a> -->
+							</li>
+
+						</ul>
+						<div class="tab-content tab-media">
+
+							<div class="tab-pane fade show active" id="tab04_pane" role="tabpanel"
+								aria-labelledby="tab04">
+								<div class="media">
+
+									<img src="images/team/01.png" alt="">
+
+
+									<div class="media-body">
+										<h5>¡¡Infórmate!!</h5>
+										<p>
+											CaribeTech cumple y se acoge a las disposiciones del Ministerio de Tecnologías de la información y las Comunicaciones de acuerdo con lo expuesto en la Ley 679 de 2001 y del Decreto 1524 de 2002, con fin proteger, prevenir y denunciar la explotación sexual de menores de edad.
+Presiona el Botón para Denunciar 
+
+											<a href="https://teprotejocolombia.org/" target="_blank"><button
+													type="button"
+													class="btn small-btn btn-maincolor2"><span>DENUNCIA</span></button></a>
+										<h6>Leyes y Decretos</h6>
+										<a href="https://www.unidadvictimas.gov.co/sites/default/files/documentosbiblioteca/ley-679-de-2001.pdf"
+											target="_blank"><button type="button"
+												class="btn small-btn btn-maincolor"><span>Ley
+													679/2001</span></button></a>
+										<a href="https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=36877&dt=S"
+											target="_blank"><button type="button"
+												class="btn small-btn btn-maincolor2"><span>Ley
+													1336/2009</span></button></a>
+										<a href="https://siteal.iiep.unesco.org/sites/default/files/sit_accion_files/co_0388.pdf"
+											target="_blank"><button class="btn small-btn btn-maincolor3"><span>Decreto
+													1524/02</span></button></a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab05_pane" role="tabpanel" aria-labelledby="tab05">
+								<div class="media">
+									<img src="images/team/div03.jpg" alt="">
+									<div class="media-body">
+										<h5>Conoce tus derechos como usuario TIC</h5>
+										<p>
+											La comisión de regulación de comunicaciones te Informa que tus derechos como usuario no pueden ser vulnerados
+puedes consultar en el siguiente 
+											<a href="https://www.crcom.gov.co/es/pagina/regimen-proteccion-usuario"
+												target="_blank"><button type="button"
+													class="btn small-btn btn-maincolor"><span>Link</span></button></a>
+										</p>
+										<h5>Política de Tratamiento de Datos</h5>
+										<p>
+											Caribetech está en concordancia para proteger sus datos conforme a la ley, puedes consultar en el siguiente
+											<a href="https://www.sic.gov.co/sobre-la-proteccion-de-datos-personales"
+												target="_blank"><button type="button"
+													class="btn small-btn btn-maincolor"><span>Link</span></button></a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="tab06_pane" role="tabpanel" aria-labelledby="tab06">
+								<div class="media">
+									<img src="images/team/03.jpg" alt="">
+									<div class="media-body">
+										<h5>Consulting</h5>
+										<p>
+											The growth of a business' product and service offerings, increasing the
+											number of stores. It is a period of economic growth as measured by a rise in
+											real GDP
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- tabs end-->
+					</div>
+				</div>
+			</section>
+			<footer
+				class="page_footer ls ms s-pt-80 s-pb-70 s-py-lg-120 s-pt-xl-135 s-pb-xl-105 c-gutter-60 text-center text-md-left">
+				<div class="container">
+					<div class="row">
+						<div class="divider-20 d-none d-xl-block"></div>
+
+						<div class="col-md-6 col-xl-3 order-xl-1 order-md-1 animate" data-animation="fadeInUp">
+
+							<div class="widget widget_text">
+								<h4 class="widget-title">Sobre nosotros</h4>
+								<p>
+									CaribeTech te entrega mejor servicio estable y sin complicaciones.
+								</p>
+								<div class="widget widget_social_buttons">
+									<a href="https://www.facebook.com/caribenet"
+										class="fa fa-facebook color-bg-icon rounded-icon" title="facebook"></a>
+									<a href="https://twitter.com/caribettech"
+										class="fa fa-twitter color-bg-icon rounded-icon" title="twitter"></a>
+									<a href="https://www.instagram.com/caribenet/"
+										class="fa fa-instagram color-bg-icon rounded-icon" title="instagram"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 order-xl-2 order-md-4 animate" data-animation="fadeInUp">
+							<div class="widget links">
+								<h4 class="widget-title">Links</h4>
+								<ul>
+									<li class="cat-item">
+										<a href="https://caribetechisp.speedtestcustom.com">Test de Velocidad</a>
+									</li>
+									<li class="cat-item">
+										<a href="https://www.mintic.gov.co/">MinTic</a>
+									</li>
+									<li class="cat-item">
+										<a href="https://www.crcom.gov.co/">CRC en Linea</a>
+									</li>
+									<li class="cat-item">
+										<a href="contact4.html">Support</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6 col-xl-3 order-xl-3 order-md-3 animate" data-animation="fadeInUp">
+							<div class="widget services-links">
+								<h4 class="widget-title">Servicios</h4>
+								<ul>
+									<li class="cat-item">
+										<a class="color-main3">Internet Inalámbrico</a>
+									</li>
+									<li class="cat-item">
+										<a class="color-main3">Fibra óptica</a>
+									</li>
+									<li class="cat-item">
+										<a class="color-main3">Redes Internas LAN</a>
+									</li>
+									<li class="cat-item">
+										<a class="color-main3">Seguridad CCTV</a>
+									</li>
+									<li class="cat-item ">
+										<a class="color-main3">Link PTP / PTMP</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xl-3 order-xl-4 order-md-2 animate" data-animation="fadeInUp">
+							<div class="widget widget_icons_list">
+								<h4 class="widget-title">Contacto</h4>
+								<p>+57 5 421 4618</p>
+								<p>+57 321 896 2928</p>
+								<a href="#" class="small-text">
+									<i class="fa fa-envelope-o color-main fs-14"></i>
+									email.
+								</a>
+								<h4 class="widget-title">Oficinas</h4>
+								<p>MZ-k casa-4 B. Ciudad del Sol</p>
+								<a href="#" class="small-text">
+									<i class="fa fa-map-marker color-main3 fs-14"></i>
+									Get Direction
+								</a>
+							</div>
+							<div class="divider-45 d-none d-md-block d-xlz-none"></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="page_copyright ds s-py-10 copyright-bg">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="divider-15 d-none d-lg-block"></div>
+						<div class="col-md-12 text-center">
+							<p>&copy; Copyright <span class="copyright_year">2021</span> CARIBETECH All Rights Reserved
+							</p>
+						</div>
+						<div class="divider-15 d-none d-lg-block"></div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
+	<script src="js/map.js"></script>
+
+
+
+</body>
+
+</html>
